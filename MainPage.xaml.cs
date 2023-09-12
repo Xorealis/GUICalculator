@@ -70,10 +70,10 @@
                     }
                     else if (!(int.TryParse(input[charCount].ToString(), out temp)))
                     {
-                        if (!(input[charCount] == '.'))
-                        {
-                            break;
-                        }
+                    if (!((input[charCount] == '.') || (input[charCount] == '-')))
+                    {
+                        break;
+                    }
                     }
                     firstVal += input[charCount];
                     charCount++;

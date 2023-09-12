@@ -18,7 +18,7 @@
             <Entry x:Name="EquationEntry"
                 Placeholder="Enter equation in the form # operand #"
                 SemanticProperties.Hint="The box in which the user enters their equation"
-                Keyboard="Numeric"
+                Keyboard="Default"
                 FontSize="22"
                 HorizontalOptions="Center" />
 
@@ -33,6 +33,9 @@
                 Text="="
                 SemanticProperties.Hint="Computes the entered equation"
                 Clicked="EqualsBtn_Clicked"
+                FontSize="40"
+                BackgroundColor="LightSkyBlue"
+                TextColor="White"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
