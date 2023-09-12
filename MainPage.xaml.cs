@@ -17,7 +17,6 @@
                 case "/":
                     if (val2 == 0)
                     {
-                        Console.WriteLine("Cannot divide by 0");
                         break;
                     }
                     result = val1 / val2;
@@ -26,7 +25,6 @@
                     result = val1 * val2;
                     break;
                 default:
-                    Console.WriteLine("An invalid Operand was entered");
                     break;
 
             }
@@ -52,8 +50,6 @@
             double output = double.NaN;
             int temp = 0;
             int charCount = 0;
-            while (true)
-            {
                 input = EquationEntry.Text;
                 charCount = 0;
                 firstVal = "";
@@ -108,4 +104,3 @@
 
         }
     }
-}

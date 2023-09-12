@@ -18,13 +18,16 @@
             <Entry x:Name="EquationEntry"
                 Placeholder="Enter equation in the form # operand #"
                 SemanticProperties.Hint="The box in which the user enters their equation"
+                Keyboard="Numeric"
                 FontSize="22"
                 HorizontalOptions="Center" />
+
             <Label x:Name="AnswerOut"
                 Text="Answer: NaN"
                 SemanticProperties.HeadingLevel="Level2"
                 FontSize="26"
                 HorizontalOptions="Center" />
+
             <Button
                 x:Name="EqualsBtn"
                 Text="="
