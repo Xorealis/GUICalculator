@@ -47,9 +47,15 @@
             double output = double.NaN; //Output answer initialized as NaN
             int temp = 0; //Dummy variable for TryParse output
             int charCount = 0;
+            String finalOut = "";
 
             input = EquationEntry.Text;
             //Iterates through loop until end of number detected by either operand or space
+            if(input == "What's my name?")
+            {
+                finalOut = "Chase";
+                goto endFunction;
+            }
             while (charCount < input.Length)
                 {
                     if (input[charCount] == ' ') //If space encountered, end of first value
@@ -104,9 +110,10 @@
                 {
                     AnswerOut.Text = "An invalid value was entered";
                 }
+            finalOut = output.ToString();
             endFunction:
             //Outputs final computer answer
-                AnswerOut.Text = ("Answer: " + output.ToString());
+                AnswerOut.Text = ("Answer: " + finalOut);
             }
 
         }
